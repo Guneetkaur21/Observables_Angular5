@@ -1,0 +1,17 @@
+<div class="container">
+<app-one-component></app-one-component>
+<app-two-component></app-two-component>
+
+<div>
+    <h2>Promise Call</h2>
+    <input #term type="text" (keyup)="search(term.value)">
+
+  </div>
+
+  <div>
+    <h2>Observable Call</h2>
+    <form [formGroup]="myForm">
+        <input type="text" formControlName="term">
+    </form>
+</div>
+</div>
